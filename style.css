@@ -1,0 +1,115 @@
+body{
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  color: white;
+}
+body::before{
+  content: "";
+  background-color: rgba(0, 0, 0, 0.308);
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+body{
+  background-image: url(./images/background7.webp);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.todayBox{
+  display: flex;
+  justify-content: space-between;
+  margin-inline: 4.5rem;
+  padding-block: 4rem;
+}
+
+.discriptionIconBox{
+  width: 120px;
+}
+.discriptionIcon{
+  width: 100%;
+}
+
+.searchicon{
+  width: 20px;
+}
+input{
+  background-color: transparent;
+  outline: none;
+  border: none;
+  color: white;
+  font-size: 1.1rem;
+
+}
+
+/* search box */
+
+.searchBox{
+  display: flex;
+  border-bottom: 3px solid white;
+  width: fit-content;
+}
+
+::placeholder{
+  color: white;
+
+}
+.errorBox{
+  margin-top: 0.5rem;
+}
+
+/* right side */
+
+.rightSubBox{
+  display: flex;
+  gap: 0.7rem;
+}
+.descriptionbox{
+  display: flex;
+  flex-direction: column;
+}
+.rightBox{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.icon{
+  width: 30px;
+}
+.humidity,.windSpeed,.feelsLikeTemp{
+  font-size: 2.2rem;
+  font-weight: bolder;
+}
+
+
+/*  left box  */
+
+.leftBox{
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+.leftbox1{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem; 
+}
+
+.conditionText{
+  font-size: 2.8rem;
+}
+.placeName{
+  font-size: 1.4rem;
+}
+.dateTimeContainer{
+  font-size: 1.1rem;
+}
+.temprature{
+  font-size: 4.9rem;
+  font-weight: bolder;
+}
