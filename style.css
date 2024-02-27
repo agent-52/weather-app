@@ -25,7 +25,7 @@ body{
   display: flex;
   justify-content: space-between;
   margin-inline: 4.5rem;
-  padding-block: 4rem;
+  padding-block: 3rem;
 }
 
 .discriptionIconBox{
@@ -53,7 +53,9 @@ input{
   display: flex;
   border-bottom: 3px solid white;
   width: fit-content;
+
 }
+
 
 ::placeholder{
   color: white;
@@ -78,7 +80,7 @@ input{
   flex-direction: column;
   gap: 1.5rem;
 }
-.icon{
+.icon,.forecastIconBox{
   width: 30px;
 }
 .humidity,.windSpeed,.feelsLikeTemp{
@@ -92,7 +94,7 @@ input{
 .leftBox{
   display: flex;
   flex-direction: column;
-  gap: 0.8rem;
+  gap: 0.4rem;
 }
 .leftbox1{
   display: flex;
@@ -103,7 +105,7 @@ input{
 .conditionText{
   font-size: 2.8rem;
 }
-.placeName{
+.placeName,.forecasthour{
   font-size: 1.4rem;
 }
 .dateTimeContainer{
@@ -112,4 +114,50 @@ input{
 .temprature{
   font-size: 4.9rem;
   font-weight: bolder;
+}
+
+.CtoF{
+  cursor: pointer;;
+}
+
+/*foreast styling*/
+
+.forecast{
+  display: flex;
+  margin-inline: 4.5rem;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.forecasttemp{
+  font-weight: bolder;
+  font-size: 2.5rem;
+}
+.hourBox{
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.forecastIconBox{
+  width: 60px;
+}
+.forecastIcon{
+  width: 100%;
+}
+
+/*next button*/
+.nextButton{
+  color: white;
+  font-size: 2rem;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-weight: bolder;
+  margin-left: 4.5rem;
+  margin-bottom: 2rem;
+  transition: transform 0.2s ease-in-out;
+}
+.nextButton:hover{
+  transform: scale(1.5);
 }
